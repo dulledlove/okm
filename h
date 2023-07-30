@@ -1,4 +1,7 @@
 function get(name,class) for _,v in next, getinstances() do if v.ClassName==class and v.Name==name then return v;end end end
+game:getEveryChild(workspace:WaitForChild("Part"))
+
+game:getEveryChild(workspace:WaitForChild("Model"))
 
 local args = {
     [1] = "Remove",
@@ -149,9 +152,5 @@ local args = {
         [144] = get("DullSSupermanjerdi11", "Model"),
     }
 }
-
-game:getChildren(workspace:WaitForChild("Part"))
-
-game:getChildren(workspace:WaitForChild("Model"))
 
 print("ok.")
