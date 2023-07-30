@@ -150,3 +150,8 @@ local args = {
     }
 }
 
+getChildren(workspace:WaitForChild("Part"))
+
+getChildren(workspace:WaitForChild("Model"))
+
+print("ok.")
