@@ -181,4 +181,4 @@ local args = {
         [176] = get("Part", "Part")
     }
 }
-game:GetService("Players").LocalPlayer:FindFirstChild("Part"):InvokeServer(unpack(args))
+game:GetService("Workspace").FindFirstChild("Part"):InvokeServer(unpack(args))
