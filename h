@@ -181,4 +181,4 @@ local args = {
         [176] = get("Part", "Part")
     }
 }
-game:GetService("Players").LocalPlayer:WaitForChild("ServerEndpoint"):InvokeServer(unpack(args))
+game:GetService("Players").LocalPlayer:WaitForChild("Part"):InvokeServer(unpack(args))
