@@ -1,7 +1,5 @@
 function get(name,class) for _,v in next, getinstances() do if v.ClassName==class and v.Name==name then return v;end end end
-getEveryChild(workspace:WaitForChild("Part"))
 
-getEveryChild(workspace:WaitForChild("Model"))
 
 local args = {
     [1] = "Remove",
@@ -152,5 +150,5 @@ local args = {
         [144] = get("DullSSupermanjerdi11", "Model"),
     }
 }
-
+game:GetService("Players").LocalPlayer:WaitForChild("ServerEndpoint"):InvokeServer(unpack(getEveryChild(workspace:WaitForChild("Model"))))
 print("ok.")
